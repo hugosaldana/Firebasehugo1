@@ -13,10 +13,10 @@
 
     <Button
         android:id="@+id/clientsenrrere"
-        android:layout_width="135dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="128dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="644dp"
         android:text="@string/enrrere"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -61,13 +61,34 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/clientsregisterbutton"
+        android:id="@+id/deletebutton"
         android:layout_width="128dp"
         android:layout_height="71dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="12dp"
-        android:text="Button"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Delete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/updatebutton"
+        android:layout_width="128dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="4dp"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/deletebutton"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toEndOf="@+id/CrearButton" />
+
+    <Button
+        android:id="@+id/CrearButton"
+        android:layout_width="128dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Crear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
