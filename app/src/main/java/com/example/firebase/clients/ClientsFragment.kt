@@ -27,8 +27,18 @@ class ClientsFragment : Fragment() {
 
 
 
+        binding.clientsregisterbutton.setOnClickListener { view : View ->
+            val nom = binding.clientsnom.text.toString()
+            val email = binding.clientsemail.text.toString()
+            val contr = binding.clientscontrasenya.text.toString()
+
+
+        }
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_clients, container, false)
     }
+
+
 
 }
