@@ -21,12 +21,22 @@ class HomeFragment : Fragment() {
         val binding = DataBindingUtil.inflate<FragmentHomeBinding>(inflater,
             R.layout.fragment_home,container,false)
 
-        binding.botontousers.setOnClickListener { view : View ->
+        binding.ButtonClients.setOnClickListener { view : View ->
             view.findNavController().navigate(R.id.action_homeFragment_to_clientsFragment)
         }
+
+        binding.ButtonMenu.setOnClickListener { view : View ->
+            view.findNavController().navigate(R.id.action_homeFragment_to_menuFragment)
+        }
+
+        binding.ButtonReviews.setOnClickListener { view : View ->
+            view.findNavController().navigate(R.id.action_homeFragment_to_reviewsFragment)
+        }
+
         binding.tencarsesiobutton.setOnClickListener { view : View ->
             view.findNavController().navigate(R.id.action_homeFragment_to_loginFragment)
         }
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
